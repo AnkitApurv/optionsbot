@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "kiteconnect",
+        "mypy",
+        "Pydantic",
+        "Zerodha"
+    ],
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+        }
+    },
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}",
+        "./src",
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}",
+        "./src",
+    ],
+}

@@ -1,0 +1,14 @@
+# data handling
+pandas # dataframes
+sqlalchemy # database
+# web service
+#     http client
+uvloop # async backend
+aiohttp[speedups] # http client
+#     user interface
+fastapi[all] # website framework
+uvicorn[standard] # asgi web server
+# financial analysis
+TA-Lib # Common financial technical indicators
+# trading platforms
+kiteconnect

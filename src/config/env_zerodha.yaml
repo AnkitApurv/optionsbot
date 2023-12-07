@@ -1,0 +1,10 @@
+name: env-zerodha
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - pip
+  - ipykernel
+  - pandas
+  - pip:
+    - kiteconnect

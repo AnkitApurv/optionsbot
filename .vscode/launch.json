@@ -1,0 +1,24 @@
+{
+    "configurations": [
+      {
+        "name": "AppContainer",
+        "type": "docker",
+        "request": "launch",
+        "preLaunchTask": "docker-run: debug",
+        "dockerServerReadyAction": {
+            "action": "openExternally",
+            "pattern": "Starting development server at (https?://\\S+|[0-9]+)",
+            "uriFormat": "%s://localhost:%s"
+        },
+        "python": {
+            "pathMappings": [
+              {
+                "localRoot": "${workspaceFolder}/src",
+                "remoteRoot": "/src"
+              }
+            ],
+            "projectType": "general"
+        },
+      }
+    ]
+}

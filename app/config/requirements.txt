@@ -1,7 +1,0 @@
-# data handling
-pandas
-# web service
-fastapi
-# financial analysis
-finta # Common financial technical indicators implemented in Pandas
-uvicorn[standard]
