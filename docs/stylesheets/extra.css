@@ -1,0 +1,11 @@
+@media screen {
+    [data-md-color-scheme="slate"] {
+        /* 
+        FIX: images not being displayed properly in dark mode
+        Reference: https://www.youtube.com/watch?v=JONzCyVXa60
+        */
+        img, video {
+            filter: invert(95%) hue-rotate(180deg);
+        }
+    }
+}

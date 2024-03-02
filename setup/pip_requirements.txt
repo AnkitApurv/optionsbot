@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-glightbox
+mkdocs-exclude
+mkdocstrings[python]
+mkdocs-git-revision-date-localized-plugin

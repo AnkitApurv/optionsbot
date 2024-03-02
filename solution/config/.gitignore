@@ -1,9 +1,0 @@
-# directories
-__pycache__
-
-# files' globs
-## sensetive files
-*.secret.*
-*.pem
-*.crt
-*.key

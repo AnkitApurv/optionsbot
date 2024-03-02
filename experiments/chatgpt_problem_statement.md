@@ -1,1 +1,0 @@
-write a python script which uses zerodha kiteconnect's KiteTicker api to execute options trading with trailing stoploss for individual trades
