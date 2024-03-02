@@ -19,4 +19,5 @@
         "${workspaceFolder}",
         "./src",
     ],
+    "python.analysis.autoImportCompletions": true,
 }

@@ -1,0 +1,22 @@
+services:
+  app:
+    build: app.dockerfile
+    ports:
+      - 8000:8000
+  database:
+    image: couchdb:latest
+    ports:
+      - 5984:5984
+    volumes:
+      - ./solution/database:/database
+  secrets_manager:
+    image: mozilla/sops:latest
+    command: ["sops", "--config", "/secrets/sops.yaml", "--decrypt", "/secrets/mysecrets.enc.yaml"]
+    volumes:
+      - ./secrets:/secrets
+    environment:
+      # Optional: specify the path to your PGP private key if you encrypted the file with PGP
+      SOPS_PGP_PRIVATE_KEY: /secrets/myprivatekey.asc
+  frontend:
+    build: frontend.dockerfile
+  

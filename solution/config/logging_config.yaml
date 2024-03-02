@@ -1,0 +1,53 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+    formatter_json: 
+        (): common.mylogger.JSONFormatter
+        fmt_keys:
+            level: levelname
+            message: message
+            timestamp: timestamp
+            logger: name
+            module: module
+            function: funcName
+            line: lineno
+            thread_name: threadName
+filters:
+    filter_warning_and_below:
+        (): common.mylogger.WarningAndBelowFilter
+    filter_error_and_above:
+        (): common.mylogger.ErrorAndAboveFilter
+handlers:
+    handler_file_json:
+        class: logging.handlers.RotatingFileHandler
+        level: DEBUG
+        formatter: formatter_json
+        filename: logs/app.log.jsonl
+        maxBytes: 10000
+        backupCount: 3
+    handler_queue_file_json:
+        (): common.mylogger.SeparateThreadQueueHandler
+        handlers:
+        - handler_file_json
+        respect_handler_level: true
+    handler_custom_http:
+        (): common.mylogger.CustomHttpHandler
+    handler_queue_custom_http:
+        (): common.mylogger.SeparateThreadQueueHandler
+        handlers:
+        - handler_custom_http
+loggers:
+    root:
+        level: DEBUG
+    execution:
+        level: DEBUG
+        filters:
+        - filter_error_and_above
+        handlers:
+        - handler_queue_file_json
+    functionality:
+        level: DEBUG
+        filters:
+        - filter_warning_and_below
+        handlers:
+        - handler_queue_custom_http
