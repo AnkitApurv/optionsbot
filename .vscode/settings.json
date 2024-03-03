@@ -5,6 +5,9 @@
         "Pydantic",
         "Zerodha"
     ],
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    },
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
