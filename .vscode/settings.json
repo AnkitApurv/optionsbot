@@ -1,10 +1,19 @@
 {
     "cSpell.words": [
+        "httpx",
+        "keepalive",
         "kiteconnect",
+        "levelname",
+        "levelno",
+        "msecs",
+        "mylogger",
         "mypy",
         "Pydantic",
         "Zerodha"
     ],
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    },
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -19,5 +28,5 @@
         "${workspaceFolder}",
         "./src",
     ],
-    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoImportCompletions": true
 }
