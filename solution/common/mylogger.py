@@ -81,11 +81,11 @@ class WarningAndBelowFilter(logging.Filter):
     @override
     def filter(self, record: logging.LogRecord) -> bool | logging.LogRecord:
         return record.levelno <= logging.INFO
-    
+
+
 class ErrorAndAboveFilter(logging.Filter):
     @override
     def filter(self, record: logging.LogRecord) -> bool | logging.LogRecord:
-        logging.
         return record.levelno <= logging.ERROR
 
 

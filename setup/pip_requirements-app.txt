@@ -1,0 +1,9 @@
+aiohttp[speedups] # http client
+polars # dataframes
+polars-ta # Common financial technical indicators
+orjson # fast json handling
+# - finta # Common (larger set of) financial technical indicators implemented in Pandas
+sqlalchemy # database
+uvloop # custom async backend - faster than standard
+# trading platforms
+kiteconnect

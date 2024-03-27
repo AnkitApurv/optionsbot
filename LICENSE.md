@@ -2,7 +2,7 @@
 
 Copyright (c) 2022 Ankit Apurv
 
-Copying of this project (may also referred to as 'repo', 'repository', 'app', 'application', 'software', 'bot', 'agent'), via any medium is strictly prohibited.
+Copying and usage of this project (may also referred to as 'repo', 'repository', 'app', 'application', 'software'), in whole or part, via any medium is strictly prohibited.
 Any usage of this project without express and explicit permission from author is strictly prohibited.
 Proprietary and confidential. Not available for public use.
 

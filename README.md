@@ -1,3 +1,3 @@
 # Options Trading Bot
 
-[Doumentation](https://ankitapurv.github.io/optionsbot/)
+[Documentation](https://ankitapurv.github.io/optionsbot/)
